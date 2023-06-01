@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="TaskTableviewCell" customModule="InnovationAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arM-lb-ZvH">
+                        <rect key="frame" x="13" y="25.666666666666671" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="4hh-lB-8hh"/>
+                            <constraint firstAttribute="height" constant="24" id="ULy-hp-Bj1"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button" image="unCheckBox"/>
+                        <state key="selected" image="checkBox"/>
+                        <connections>
+                            <action selector="clickCheckBox:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5V2-Nk-ci8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgg-fx-zm4">
+                        <rect key="frame" x="288" y="30.666666666666671" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="078-Ei-WN7"/>
+                            <constraint firstAttribute="width" constant="14" id="ylf-4K-R1U"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="cross"/>
+                        <connections>
+                            <action selector="clickCross:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NJu-3O-CME"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4es-dV-H9f">
+                        <rect key="frame" x="49" y="15.333333333333332" width="119" height="44.666666666666671"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-YD-66t">
+                                <rect key="frame" x="0.0" y="0.0" width="119" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZp-Am-6fr">
+                                <rect key="frame" x="0.0" y="24.333333333333329" width="119" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:00 AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPx-PO-Oyw">
+                        <rect key="frame" x="188" y="27.333333333333336" width="75" height="20.333333333333336"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="F4Y-77-uNr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="arM-lb-ZvH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="CM9-6J-rmP"/>
+                    <constraint firstAttribute="trailing" secondItem="fgg-fx-zm4" secondAttribute="trailing" constant="18" id="Eja-BB-Blm"/>
+                    <constraint firstItem="fgg-fx-zm4" firstAttribute="centerY" secondItem="arM-lb-ZvH" secondAttribute="centerY" id="MTO-9d-asx"/>
+                    <constraint firstItem="fgg-fx-zm4" firstAttribute="leading" secondItem="QPx-PO-Oyw" secondAttribute="trailing" constant="25" id="NNJ-Tx-qVz"/>
+                    <constraint firstItem="4es-dV-H9f" firstAttribute="leading" secondItem="arM-lb-ZvH" secondAttribute="trailing" constant="12" id="Q0S-HN-OsV"/>
+                    <constraint firstItem="QPx-PO-Oyw" firstAttribute="leading" secondItem="4es-dV-H9f" secondAttribute="trailing" constant="20" id="WBi-M7-sjx"/>
+                    <constraint firstItem="4es-dV-H9f" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WRx-z2-TRP"/>
+                    <constraint firstItem="QPx-PO-Oyw" firstAttribute="centerY" secondItem="fgg-fx-zm4" secondAttribute="centerY" id="b3N-io-THF"/>
+                    <constraint firstItem="arM-lb-ZvH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ciI-du-p39"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnCheckBox" destination="arM-lb-ZvH" id="RGf-F3-cGL"/>
+                <outlet property="btnCross" destination="fgg-fx-zm4" id="EGR-px-11W"/>
+                <outlet property="lblStatus" destination="hZp-Am-6fr" id="TUi-HI-YFY"/>
+                <outlet property="lblTime" destination="QPx-PO-Oyw" id="sKo-M8-CaN"/>
+                <outlet property="lblTitle" destination="lsK-YD-66t" id="xe6-fu-Wid"/>
+            </connections>
+            <point key="canvasLocation" x="-21" y="-1"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkBox" width="24" height="24"/>
+        <image name="cross" width="14" height="14"/>
+        <image name="unCheckBox" width="24" height="24"/>
+    </resources>
+</document>
